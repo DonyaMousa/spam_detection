@@ -1,0 +1,6 @@
+# Extra packages installed on top of quay.io/jupyter/scipy-notebook.
+# pandas, numpy, scikit-learn, matplotlib, seaborn and scipy are
+# already included in the base image, so they are not repeated here.
+
+wordcloud>=1.9 #Creating word-cloud visualizations
+tabulate>=0.9 #Formatting tables in text reports
