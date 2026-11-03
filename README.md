@@ -187,14 +187,6 @@ docker logs bd-a1-teammate-test
 
 The teammate opens JupyterLab using the URL in the logs, runs `notebook/analysis.ipynb` with **Restart Kernel and Run All Cells**, confirms the generated files appear under their host `output/`, and captures evidence of successful reproduction. The image already contains the dataset and notebook.
 
-**Verification record (fill in after completing the test):**
-
-| Check | Status / evidence |
-|---|---|
-| Docker Hub `final` tag visible | **Pending verification** |
-| Image pulled on teammate computer | **Pending verification** |
-| Notebook executes top-to-bottom in pulled image | **Pending verification** |
-| Teammate's host output files generated | **Pending verification** |
 
 ## 7. Data analysis and preprocessing (Assignment Section 4)
 
@@ -248,24 +240,6 @@ The notebook represents text using TF-IDF, reduces dimensionality with Truncated
 | Cluster 0 (mostly conversational) | 4,550 messages; 1.5% spam |
 | Cluster 1 (mostly promotional) | 621 messages; 93.9% spam |
 | Silhouette score | 0.0274 |
-| Adjusted Rand Index vs labels | 0.879 |
-
-The low silhouette score indicates weak geometric separation in the chosen representation despite substantial agreement with the labels. The clustering section examines representative terms, cluster sizes, composition, and their relationship to the known labels. **Cluster ID numbers are arbitrary and are not supervised class predictions.**
-
-## 10. Required deliverables and figures
-
-| Deliverable | Location |
-|---|---|
-| Full notebook | `notebook/analysis.ipynb` |
-| Source dataset | `data/dataset.csv` |
-| Cleaned dataset | `output/cleaned_data.csv` |
-| Supervised metrics and confusion-matrix details | `output/model_metrics.txt` |
-| K-Means sizes, quality measure, interpretations | `output/cluster_summary.txt` |
-| Correlation heatmap | `output/figures/correlation_heatmap.png` |
-| Top-20 word-frequency chart | `output/figures/word_frequency_top20.png` |
-| Group comparison | `output/figures/group_comparison_spam_vs_ham.png` |
-| Confusion matrices | `output/figures/confusion_matrices.png` |
-| Other figures | `output/figures/` (model, sampling, length, K-Means) |
-| Docker evidence | `screenshots/` |
-| Submission | One ZIP containing the complete project |
+| Adjusted Rand Index vs labels | 0.879 
+#
 
